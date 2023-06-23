@@ -40,6 +40,9 @@
         .input-group input {
             width: 48%;
         }
+        label {
+            color: gray;
+        }
         form input[type="text"],
         form input[type="email"],
         form input[type="password"],
@@ -48,7 +51,7 @@
             border: 1px solid #ccc;
             border-radius: 3px;
             padding: 5px;
-            margin-bottom: 10px;
+            margin: 5px 0;
         }
         form button {
             width: 100%;
@@ -67,24 +70,25 @@
     <form>
         <h2>Создание почтового ящика</h2>
         <div class="input-group">
-            <label for="fname">Имя:</label>
+            <label for="fname">Имя</label>
             <input type="text" id="fname" name="fname" required>
-            <label for="lname">Фамилия:</label>
+            <label for="lname">Фамилия</label>
             <input type="text" id="lname" name="lname" required>
         </div>
-        <label for="gender">Пол:</label><br>
+        <label for="gender">Пол</label><br>
         <input type="radio" id="male" name="gender" value="male" required>
         <label for="male">Мужской</label><br>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Женский</label><br>
-        <label for="phone">Номер телефона:</label><br>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
-        <small>Формат: 123-45-678</small><br>
-        <label for="email">Email:</label><br>
+        <label for="phone">Номер телефона</label><br>
+        <input type="tel" id="phone" name="phone
+        <label for="phone">Номер телефона</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+7" required><br>
+        <label for="email">Email</label><br>
         <input type="email" id="email" name="email" required><br>
-        <label for="password">Пароль:</label><br>
-        <input type="password" id="password" name="password" minlength="8" required><br
-        <label for="cpassword">Повторить пароль:</label><br>
+        <label for="password">Пароль</label><br>
+        <input type="password" id="password" name="password" minlength="8" required><br>
+        <label for="cpassword">Повторить пароль</label><br>
         <input type="password" id="cpassword" name="cpassword" minlength="8" required><br>
         <button type="submit">Создать</button>
     </form>
