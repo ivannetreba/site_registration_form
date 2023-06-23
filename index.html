@@ -28,11 +28,18 @@
             padding: 20px;
             width: 400px;
         }
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .input-group label,
+        .input-group input {
+            width: 48%;
+        }
         form input[type="text"],
         form input[type="email"],
         form input[type="password"],
         form input[type="tel"] {
-            width: 100%;
             margin-bottom: 10px;
             padding: 5px;
         }
@@ -49,10 +56,12 @@
     <header>Удобная почта</header>
     <form>
         <h2>Создание почтового ящика</h2>
-        <label for="fname">Имя:</label><br>
-        <input type="text" id="fname" name="fname" required><br>
-        <label for="lname">Фамилия:</label><br>
-        <input type="text" id="lname" name="lname" required><br>
+        <div class="input-group">
+            <label for="fname">Имя:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Фамилия:</label>
+            <input type="text" id="lname" name="lname" required>
+        </div>
         <label for="gender">Пол:</label><br>
         <input type="radio" id="male" name="gender" value="male" required>
         <label for="male">Мужской</label><br>
@@ -70,4 +79,3 @@
         <button type="submit">Создать</button>
     </form>
 </body>
-</html>
